@@ -24,8 +24,6 @@ torch.set_default_dtype(torch.float32)
 
 device = 'cpu'
 
-
-
 print(device)
 
 y = model.NN()
@@ -154,7 +152,7 @@ h=plt.colorbar()
 h.ax.tick_params(labelsize=20)
 plt.xticks([])
 plt.yticks([])
-plt.savefig('NNsolution',bbox_inches='tight')
+plt.savefig(name+'NNsolution',bbox_inches='tight')
 
 
 fig_2 = plt.figure(2, figsize=(6, 5))
@@ -163,7 +161,7 @@ h=plt.colorbar()
 h.ax.tick_params(labelsize=20)
 plt.xticks([])
 plt.yticks([])
-plt.savefig('GTsolution',bbox_inches='tight')
+plt.savefig(name+'GTsolution',bbox_inches='tight')
 
 fig_3 = plt.figure(3, figsize=(6, 5))
 plt.pcolor(ms_x,ms_y,abs(ms_ugt-ms_ysol), cmap='jet')
@@ -171,4 +169,4 @@ h=plt.colorbar()
 h.ax.tick_params(labelsize=20)
 plt.xticks([])
 plt.yticks([])
-plt.savefig('Error',bbox_inches='tight')    
+plt.savefig(name+'Error',bbox_inches='tight')    

@@ -5,7 +5,6 @@ from sympy import *
 # div(A nabla(y)) + beta dot nabla(y) + gamma y = f
 
 x1,x2 = symbols('x1 x2')
-#y = exp(x1*(1-x1))*sin(pi*x2) + exp(x2*(1-x2))*sin(pi*x1)
 y = sin(pi*x1)*sin(pi*x2)
 
 A = Matrix([[4.,-1.],[-1.,3.]])
