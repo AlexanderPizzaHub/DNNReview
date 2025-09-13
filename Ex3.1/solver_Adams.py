@@ -25,7 +25,7 @@ y = model.NN()
 y.apply(model.init_weights)
 
 dataname = '3000pts'
-name = 'results/t3/'
+name = 'results/t12/'
 
 bw = 1000
 A = torch.tensor([[4.,-1.],[-1.,3.]])

@@ -24,14 +24,14 @@ torch.set_default_dtype(torch.float64)
 y = model.NN()
 y.apply(model.init_weights)
 
-exp_name = 'PINN_paper2'
+exp_name = 'PINN_t10'
 
 settings = {
         'dataname':'5000pts',
         'interior_data':5000,
         'boundary_data':1000,
         
-        'max_iter': 5000,
+        'max_iter': 3000,
         'boundary_weight': 100,
         'lr': 1e-4,
         'NN_arc': [2,30,30,30,30,1],
