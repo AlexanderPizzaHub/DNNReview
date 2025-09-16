@@ -21,7 +21,7 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 torch.set_default_dtype(torch.float64)
 
-exp_name = 'DRM_paper2'
+exp_name = 'DRM_t10'
 
 settings = {
         'dataname':'5000pts',

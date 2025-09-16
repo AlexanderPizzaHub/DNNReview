@@ -13,7 +13,7 @@ import torch
 import matplotlib.pyplot as plt
 import os
 
-exp_name = 'VPINN_t4'
+exp_name = 'VPINN_t10'
 settings = {
     'mashpath':'L_shape_domain_2.msh',
     'nNodes':2113,

@@ -24,7 +24,7 @@ torch.set_default_dtype(torch.float64)
 y = model.NN()
 y.apply(model.init_weights)
 
-exp_name = 'PINN_t1_withrecord'
+exp_name = 'PINN_t10'
 
 settings = {
         'dataname':'10000pts',
@@ -102,7 +102,7 @@ losslist = list()
 for epoch in range(settings['max_iter']):
     loss = closure()
     losslist.append(loss)
-    if epoch %10==0:
+    if epoch %100==0:
         vy,_,_ = validation.validate(y)
         vlist.append(float(vy))
         print("epoch: {}, loss:{}, val:{}".format(epoch,loss,vy))

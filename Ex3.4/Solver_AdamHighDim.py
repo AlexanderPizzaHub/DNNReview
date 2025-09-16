@@ -30,7 +30,7 @@ y = model.NN()
 y.apply(model.init_weights)
 
 dataname = '10000pts'
-name = 'results/'
+name = 'results/t10'
 
 bw = 60.0
 

@@ -20,7 +20,7 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 torch.set_default_dtype(torch.float64)
 
-exp_name = 'DRM_paper4'
+exp_name = 'DRM_t2'
 
 settings = {
         'dataname':'10000pts',
@@ -107,7 +107,7 @@ vlist = []
 for epoch in range(settings['max_iter']):
     loss = closure()
     losslist.append(loss)
-    if epoch %10==0:
+    if epoch %100==0:
         vy,_,_ = validation.validate(y)
         vlist.append(float(vy))
         #v_bL2 = np.sqrt(np.mean(np.square(y_bgt-y(tbdx1,tbdx2,tbdx3,tbdx4,tbdx5,tbdx6).detach().numpy())))

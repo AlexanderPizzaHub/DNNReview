@@ -19,7 +19,7 @@ torch.set_default_dtype(torch.float64)
 
 #name = 'uniform_lfbgs_simul_t1/'
 dataname = '10000pts'
-path = 'results/WAN/t3/'
+path = 'results/WAN/t6/'
 
 bw = 1000000
 val_interval = 50
